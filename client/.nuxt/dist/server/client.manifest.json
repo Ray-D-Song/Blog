@@ -1,0 +1,15 @@
+{
+  "@vite/client": {
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/Users/raysong/Code/CodeBase/MonoRepo/Blog/client/node_modules/.pnpm/nuxt@3.6.5_x2evywih7tvalpk7uoe7hnmwgq/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "isEntry": true,
+    "file": "/Users/raysong/Code/CodeBase/MonoRepo/Blog/client/node_modules/.pnpm/nuxt@3.6.5_x2evywih7tvalpk7uoe7hnmwgq/node_modules/nuxt/dist/app/entry.js"
+  }
+}
