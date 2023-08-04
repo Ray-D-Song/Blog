@@ -1,0 +1,11 @@
+FROM node:latest
+EXPOSE 3000
+
+WORKDIR /code
+COPY ./client ./client
+WORKDIR /code/client
+RUN npm install -g pnpm \
+  && pnpm install \
+  && pnpm run build
+
+CMD [ "node", "/code/client/.output/server/index.mjs" ]

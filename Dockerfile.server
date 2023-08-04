@@ -1,0 +1,10 @@
+FROM golang:latest
+EXPOSE 9000
+
+WORKDIR /code
+COPY ./server ./server
+WORKDIR /code/server
+RUN go get \
+  && go build -o main
+
+CMD [ "/code/server/main", "--prod" ]
