@@ -16,7 +16,8 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.4.5",
     "clipboard-polyfill": "^4.0.0",
-    "nuxt": "^3.6.2"
+    "nuxt": "^3.6.2",
+    "sitemap": "^7.1.1"
   },
   "dependencies": {
     "@iconify/json": "^2.2.89",

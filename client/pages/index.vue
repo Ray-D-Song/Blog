@@ -2,11 +2,11 @@
   <div class="flex flex-row w-full justify-center">
     <div class="flex flex-col items-center">
       <Card
-        v-for="p in postList"
+        v-for="p in contentList"
         :title="p.title"
-        :subtitle="p.subtitle"
-        :img-url="p.cover"
-        :id="p.id"
+        :description="p.description"
+        :cover="p.cover"
+        :_path="p._path"
       />
     </div>
     <div class="hidden md:block md:ml-16">
@@ -18,16 +18,12 @@
 
 <script setup lang="ts">
 import Card from '~/components/card.vue'
-import customFetch from '~/custom/customFetch'
+import type {ParsedContent} from '@nuxt/content/dist/runtime/types'
 
-type PostList = Array<{
+type Content = ParsedContent & {
   cover: string
-  title: string
-  subtitle: string
-  id: number
-}>
+  description: string
+}
 
-const getPostList = useFetch('/api/getPostList')
-
-const {list: postList}: {list: PostList} = await customFetch(getPostList)
+const contentList = <unknown>(await queryContent('/').find()) as Content
 </script>
