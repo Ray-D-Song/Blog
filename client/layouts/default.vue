@@ -56,7 +56,7 @@ const router = useRouter()
 const routeTable = {
   1: '/',
   2: 'https://github.com/Ray-D-Song',
-  3: 'http://ray-d-song/api/v1/rss'
+  3: 'http://ray-d-song/rss.xml'
 }
 
 const toggleColorMode = () => {
