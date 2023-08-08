@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {queryContent} from '@nuxt/content/dist/runtime/composables/query'
+import { globSync } from 'glob'
 
-const pathList = (await queryContent('/').only('_path').find()).map(item => ('post' + item))
+const pathList = globSync('./content/*.md').map(path => '/post' + path.slice(7, -3))
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
