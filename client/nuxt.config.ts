@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
   ],
+  ssr: true,
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
   },
@@ -18,7 +19,8 @@ export default defineNuxtConfig({
     },
     prerender: {
       routes: ['/sitemap.xml', '/rss.xml']
-    }
+    },
+    static: true
   },
   content: {
     highlight: {
