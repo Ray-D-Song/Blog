@@ -1,4 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import {queryContent} from '@nuxt/content/dist/runtime/composables/query'
+
+const pathList = (await queryContent('/').only('_path').find()).map(item => ('post' + item))
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -18,8 +22,7 @@ export default defineNuxtConfig({
       }
     },
     prerender: {
-      // routes: ['/sitemap.xml', '/rss.xml']
-      crawlLinks: true
+      routes: ['/sitemap.xml', '/rss.xml', ...pathList]
     },
     static: true
   },
