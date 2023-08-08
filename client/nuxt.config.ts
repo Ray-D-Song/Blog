@@ -3,11 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxthq/ui',
-    '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     'nuxt-icon',
     '@nuxt/content',
-    '@nuxtjs/feed'
   ],
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
@@ -19,7 +17,7 @@ export default defineNuxtConfig({
       }
     },
     prerender: {
-      routes: ['/sitemap.xml']
+      routes: ['/sitemap.xml', '/rss.xml']
     }
   },
   content: {
@@ -33,7 +31,15 @@ export default defineNuxtConfig({
         'javascript',
         'typescript',
         'vue',
-        'vue-html'
+        'vue-html',
+        'java',
+        'ruby',
+        'go',
+        'jsx',
+        'tsx',
+        'bash',
+        'dockerfile',
+        'c'
       ]
     }
   }
