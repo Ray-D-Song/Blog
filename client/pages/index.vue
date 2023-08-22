@@ -9,9 +9,15 @@
         :_path="p._path"
       />
     </div>
-    <div class="hidden md:block md:ml-16">
-      This is a simple test.
-      Creating structs and interfaces is an essential part of implementing dependency injection in Golang. Structs are used to define objects, while interfaces are used to define the behavior of those objects. When creating structs and interfaces for your code, it’s important to consider the dependencies that each object will have and how those dependencies will be injected.
+    <div class="hidden md:block md:ml-16 markdown w-96">
+<!--      <h1>Hi, this is <span class="italic underline">Ray-D-Song</span>'s Blog.</h1>-->
+<!--      <div class="text-xl my-5">My primary job is a web front-end development engineer (for now). <br/> But I also dabble in various other technologies.</div>-->
+<!--      <div class="text-xl">You can click the icon button in the top right corner to subscribe to the RSS feed or check out my GitHub.</div>-->
+    </div>
+    <div class="hidden md:block markdown fixed sm:w-2/6 lg:w-2/5 top-1/4 right-20">
+      <h1>Hi, this is <span class="italic underline">Ray-D-Song</span>'s Blog.</h1>
+      <div class="text-xl my-5">My primary job is a web front-end development engineer (for now). <br/> But I also dabble in various other technologies.</div>
+      <div class="text-xl">You can click the icon button in the top right corner to subscribe to the RSS feed or check out my GitHub.</div>
     </div>
   </div>
 </template>

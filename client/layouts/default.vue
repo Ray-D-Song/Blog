@@ -15,6 +15,7 @@
           class="icon-button"
           @click="handleRedirect(2)"
         />
+        <div class="w-1"/>
         <UButton
           :padded="false"
           icon="i-bi-rss"

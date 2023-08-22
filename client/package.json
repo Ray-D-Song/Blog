@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "create": "node ./bin/createContent.js"
+    "create": "./bin/createContent"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxt/content',
   ],
+  colorMode: {
+    preference: 'dark'
+  },
   ssr: true,
   ui: {
     icons: ['eva', 'fa6-brands', 'simple-icons', 'bi', 'fluent']
@@ -45,7 +48,8 @@ export default defineNuxtConfig({
         'tsx',
         'bash',
         'dockerfile',
-        'c'
+        'c',
+        'cpp'
       ]
     }
   }

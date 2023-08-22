@@ -18,24 +18,50 @@
   @apply opacity-70 hover:opacity-100 mx-3;
 }
 
+.toast {
+  transform: translate(-50%, -50%);
+  @apply
+  z-20
+  text-white
+  dark:text-black
+  top-10
+  left-1/2
+  w-72
+  shadow-black/30
+  shadow-xl
+  flex
+  justify-center
+  items-center
+  rounded-xl
+  h-12
+  bg-black
+  dark:bg-white
+  shadow
+  shadow-lg
+  dark:shadow-white/30
+  fixed
+}
+
 .markdown {
   @apply
   prose-headings:opacity-80
   prose-headings:my-3
 
   prose-h1:text-3xl
+  prose-h1:mt-5
 
   prose-h2:text-2xl
 
   prose-h3:text-xl
 
-  prose-pre:my-4
-  prose-pre:rounded-md
   prose-pre:p-2
-  prose-pre:bg-code-light
-  prose-pre:dark:bg-code-dark
+  /*prose-pre:bg-code-light*/
+  /*prose-pre:dark:bg-code-dark*/
 
   prose-code:text-sm
+  prose-code:dark:text-blue-300
+  prose-code:text-blue-800
+  prose-code:font-medium
 
   prose-p:opacity-80
   prose-td:opacity-80
@@ -46,6 +72,19 @@
   prose-img:w-2/5
   prose-img:mx-auto
   prose-img:my-5
+
+  prose-a:underline
+  prose-a:mx-1
+
+  prose-li:text-sm
+  prose-li:ml-4
+  prose-li:my-2
+
+  prose-ol:list-decimal
+
+  prose-ul:list-disc
+
+  prose-p:my-3
 
   prose-pre:overflow-x-auto
 }
